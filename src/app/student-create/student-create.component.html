@@ -1,0 +1,15 @@
+<form>
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" [(ngModel)]="newStudent.firstName" name="firstName">
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="LastName" [(ngModel)]="newStudent.lastName" name="lastName">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" [(ngModel)]="newStudent.age" name="age">
+    </div>
+    <button (click)="createStudent()">Create</button>
+</form>

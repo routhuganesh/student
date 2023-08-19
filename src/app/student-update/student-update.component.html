@@ -1,0 +1,19 @@
+<p>student-update works!</p>
+
+<h2>Update Student</h2>
+<form *ngIf="student">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="student.firstName" name="firstName">
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="student.lastName" name="lastName">
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" [(ngModel)]="student.age" name="age">
+  </div>
+  <button (click)="updateStudent()">Update</button>
+</form>
+<p *ngIf="!student">Student not found</p>

@@ -1,0 +1,10 @@
+<!-- <p>student-details works!</p> -->
+<h2>Student Details</h2>
+<div *ngIf="student">
+  <p><strong>ID:</strong> {{ student.id }}</p>
+  <p><strong>First Name:</strong> {{ student.firstName }}</p>
+  <p><strong>Last Name:</strong> {{ student.lastName }}</p>
+  <p><strong>Age:</strong> {{ student.age }}</p>
+</div>
+<p *ngIf="!student">Student not found</p>
+
